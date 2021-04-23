@@ -1,27 +1,30 @@
+import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
-import 'package:gosafe_driver/pages/intro_page.dart';
-import 'package:gosafe_driver/pages/registro_page.dart';
-import 'package:gosafe_driver/pages/datosC1_page.dart';
 
-void main() {
+import 'package:get/get.dart';
+import 'package:get_storage/get_storage.dart';
+
+import 'package:gosafe_driver/src/env.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
+
+  await GetStorage.init();
+
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'GoSafe',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      initialRoute: RegistroPage.id,
-      routes: {
-        IntroPage.id: (context) => IntroPage(),
-        RegistroPage.id: (context) => RegistroPage(),
-        Datos1Page.id: (context) => Datos1Page(),
-      },
+    return GetMaterialApp(
+      initialRoute: Routes.intro.toString(),
+      getPages: pages,
     );
   }
 }
