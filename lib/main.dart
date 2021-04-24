@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gosafe_driver/pages/intro_page.dart';
+import 'package:gosafe_driver/pages/licencia_page.dart';
 import 'package:gosafe_driver/pages/registro_page.dart';
 import 'package:gosafe_driver/pages/datosC1_page.dart';
 
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
         IntroPage.id: (context) => IntroPage(),
         RegistroPage.id: (context) => RegistroPage(),
         Datos1Page.id: (context) => Datos1Page(),
+        LicenciaPage.id: (context) => LicenciaPage(),
       },
     );
   }

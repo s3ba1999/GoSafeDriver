@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gosafe_driver/pages/intro_page.dart';
 import 'package:gosafe_driver/pages/datosC1_page.dart';
+import 'package:gosafe_driver/pages/licencia_page.dart';
 import 'package:gosafe_driver/widgets/widget_registro.dart';
 
 class RegistroPage extends StatefulWidget {
@@ -40,7 +41,7 @@ class _RegistroPageState extends State<RegistroPage> {
                           fontWeight: FontWeight.bold),
                     ),
                     TarjetaR(route : Datos1Page.id,nombre : 'Datos del conductor'),
-                    TarjetaR(route : IntroPage.id,nombre : 'Licencia de Conducir'),
+                    TarjetaR(route : LicenciaPage.id,nombre : 'Licencia de Conducir'),
                     TarjetaR(route : IntroPage.id,nombre : 'Tarjeta de identificación'),
                     TarjetaR(route : IntroPage.id,nombre : 'Confirmación de ID'),
                     TarjetaR(route : IntroPage.id,nombre : 'Información acerca del vehículo'),

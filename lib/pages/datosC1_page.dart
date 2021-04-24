@@ -104,7 +104,7 @@ class _Datos1PageState extends State<Datos1Page> {
                               decoration: const InputDecoration(
                                   labelText: 'Contraseña',
                                   suffixIcon: IconButton(
-                                    onPressed: _toggle,
+                                    onPressed: null,
                                     icon: Icon(Icons.remove_red_eye,),
                                     ),
                                   icon: const Padding(
