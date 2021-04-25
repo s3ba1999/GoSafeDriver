@@ -1,6 +1,5 @@
 // import 'dart:io';
 // import 'package:flutter/material.dart';
-// // import 'package:gosafe_driver/pages/intro_page.dart';
 // import 'package:image_picker/image_picker.dart';
 // import 'package:gosafe_driver/widgets/widget_registro.dart';
 
