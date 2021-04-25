@@ -8,6 +8,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "block_input",
+      "rootUri": "file:///Users/cartory/development/flutter/.pub-cache/hosted/pub.dartlang.org/block_input-1.2.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.7"
+    },
+    {
       "name": "boolean_selector",
       "rootUri": "file:///Users/cartory/development/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0",
       "packageUri": "lib/",
@@ -66,6 +72,12 @@
       "rootUri": "file:///Users/cartory/development/flutter/packages/flutter",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_custom_dialog",
+      "rootUri": "file:///Users/cartory/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_custom_dialog-1.0.20",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
     },
     {
       "name": "flutter_plugin_android_lifecycle",
@@ -290,7 +302,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-04-25T16:50:16.530934Z",
+  "generated": "2021-04-25T17:14:13.584217Z",
   "generator": "pub",
   "generatorVersion": "2.12.2"
 }

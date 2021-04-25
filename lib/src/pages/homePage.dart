@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:gosafe_driver/src/widgets/drawer.dart';
 import 'package:gosafe_driver/src/widgets/background.dart';
 
 class HomePage extends StatelessWidget {
@@ -8,6 +9,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: CustomDrawer(),
       body: Background(
         alignment: Alignment.center,
         children: [

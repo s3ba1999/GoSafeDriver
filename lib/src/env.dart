@@ -2,6 +2,7 @@ import 'package:get/get.dart';
 
 import 'package:gosafe_driver/src/pages/homePage.dart';
 import 'package:gosafe_driver/src/pages/intro_page.dart';
+import 'package:gosafe_driver/src/pages/registro/confirmPage.dart';
 import 'package:gosafe_driver/src/pages/registro_page.dart';
 import 'package:gosafe_driver/src/pages/enterPhonePage.dart';
 import 'package:gosafe_driver/src/pages/registro/datosPage.dart';
@@ -19,8 +20,9 @@ enum Routes {
   phone,
   intro,
   datos,
-  register,
   enter,
+  confirm,
+  register,
 }
 
 // final box = Get
@@ -31,4 +33,5 @@ final pages = [
   GetPage(name: Routes.datos.toString(), page: () => DatosPage()),
   GetPage(name: Routes.enter.toString(), page: () => EnterPhonePage()),
   GetPage(name: Routes.register.toString(), page: () => RegistroPage()),
+  GetPage(name: Routes.confirm.toString(), page: () => ConfirmPhonePage()),
 ];
