@@ -41,6 +41,9 @@ class MyApp extends StatelessWidget {
         
         textTheme: TextTheme(
           button: TextStyle(fontSize: 20, color: Colors.white, fontWeight: FontWeight.w700),
+
+          overline: TextStyle(fontSize: 25, fontWeight: FontWeight.w600, color: Colors.grey),
+          
           headline1: TextStyle(fontSize: 26, fontWeight: FontWeight.bold, color: Colors.white),
           headline2: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Color(0xff80AF08)),
           headline3: TextStyle(fontSize: 24, fontWeight: FontWeight.w400, color: Colors.black),
@@ -48,7 +51,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       getPages: pages,
-      initialRoute: Routes.datos.toString(),
+      initialRoute: Routes.enter.toString(),
     );
   }
 }

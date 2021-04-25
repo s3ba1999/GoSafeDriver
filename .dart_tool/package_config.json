@@ -128,10 +128,22 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "international_phone_input",
+      "rootUri": "file:///Users/cartory/development/flutter/.pub-cache/hosted/pub.dartlang.org/international_phone_input-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.2"
+    },
+    {
       "name": "js",
       "rootUri": "file:///Users/cartory/development/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.3",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "libphonenumber",
+      "rootUri": "file:///Users/cartory/development/flutter/.pub-cache/hosted/pub.dartlang.org/libphonenumber-1.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "1.19"
     },
     {
       "name": "matcher",
@@ -278,7 +290,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-04-23T21:48:17.120368Z",
+  "generated": "2021-04-25T16:50:16.530934Z",
   "generator": "pub",
   "generatorVersion": "2.12.2"
 }

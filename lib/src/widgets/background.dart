@@ -29,14 +29,16 @@ class Background extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    children.insert(0, ClipPath(
-      clipper: BackgroundClipper(),
-      child: Container(
-        color: Color(0xff80AF08),
-        width: double.maxFinite,
-        height: double.maxFinite,
-      ),
-    ));
+    children.insert(
+        0,
+        ClipPath(
+          clipper: BackgroundClipper(),
+          child: Container(
+            color: Color(0xff80AF08),
+            width: double.maxFinite,
+            height: double.maxFinite,
+          ),
+        ));
 
     return Stack(
       children: this.children,

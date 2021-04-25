@@ -29,6 +29,7 @@ dependencies:
   get_storage: ^2.0.2
   image_picker: ^0.7.4
   #widgetDependencies
+  international_phone_input: ^1.0.4
   #firebaseDependencies
   #mapsDependencies
 
