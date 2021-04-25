@@ -2,15 +2,7 @@ import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 
 import 'package:international_phone_input/international_phone_input.dart';
-
-class EnterPhonePage extends StatefulWidget {
-  EnterPhonePage({Key key}) : super(key: key);
-
-  @override
-  _EnterPhonePageState createState() => _EnterPhonePageState();
-}
-
-class _EnterPhonePageState extends State<EnterPhonePage> {
+class EnterPhonePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
