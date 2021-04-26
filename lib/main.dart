@@ -51,7 +51,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       getPages: pages,
-      initialRoute: Routes.home.toString(),
+      initialRoute: Routes.tarjeta.toString(),
     );
   }
 }

@@ -2,10 +2,15 @@ import 'package:get/get.dart';
 
 import 'package:gosafe_driver/src/pages/homePage.dart';
 import 'package:gosafe_driver/src/pages/intro_page.dart';
-import 'package:gosafe_driver/src/pages/registro/confirmPage.dart';
-import 'package:gosafe_driver/src/pages/registro_page.dart';
 import 'package:gosafe_driver/src/pages/enterPhonePage.dart';
+
+import 'package:gosafe_driver/src/pages/registro_page.dart';
+import 'package:gosafe_driver/src/pages/registro/licencia.dart';
 import 'package:gosafe_driver/src/pages/registro/datosPage.dart';
+
+import 'package:gosafe_driver/src/pages/registro/confirmPage.dart';
+import 'package:gosafe_driver/src/pages/registro/tarjeta_id_page.dart';
+import 'package:gosafe_driver/src/pages/registro/confirmar_id_page.dart';
 
 const API_URL = "http://localhost:3000/api";
 
@@ -20,18 +25,27 @@ enum Routes {
   phone,
   intro,
   datos,
+
   enter,
   confirm,
   register,
+
+  tarjeta,
+  licencia,
+  confirmID,
 }
 
-// final box = Get
 
 final pages = [
   GetPage(name: Routes.home.toString(), page: () => HomePage()),
   GetPage(name: Routes.intro.toString(), page: () => IntroPage()),
   GetPage(name: Routes.datos.toString(), page: () => DatosPage()),
   GetPage(name: Routes.enter.toString(), page: () => EnterPhonePage()),
+
   GetPage(name: Routes.register.toString(), page: () => RegistroPage()),
   GetPage(name: Routes.confirm.toString(), page: () => ConfirmPhonePage()),
+
+  GetPage(name: Routes.licencia.toString(), page: () => LicenciaPage()),
+  GetPage(name: Routes.tarjeta.toString(), page: () => TargetaIDPage()),
+  GetPage(name: Routes.confirmID.toString(), page: () => ConfirmarIDPage()),
 ];

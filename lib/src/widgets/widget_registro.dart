@@ -17,8 +17,8 @@ Widget headerRegistro() {
       ),
       Expanded(
         child: Padding(
-          padding: EdgeInsets.symmetric(vertical: 25, horizontal: 10),
           child: Image.asset('assets/images/auto2.png'),
+          padding: EdgeInsets.symmetric(vertical: 25, horizontal: 10),
         ),
       ),
     ],

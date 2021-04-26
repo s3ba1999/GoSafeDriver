@@ -35,7 +35,7 @@ class CustomDrawer extends StatelessWidget {
                 InkWell(
                   child: Text('Ver'),
                   onTap: () => print('User Profile'),
-                )
+                ),
               ],
             )
           ],

@@ -1,5 +1,9 @@
 PODS:
+  - block_input (0.0.1):
+    - Flutter
   - Flutter (1.0.0)
+  - flutter_custom_dialog (0.0.1):
+    - Flutter
   - image_picker (0.0.1):
     - Flutter
   - libphonenumber (0.0.1):
@@ -10,7 +14,9 @@ PODS:
     - Flutter
 
 DEPENDENCIES:
+  - block_input (from `.symlinks/plugins/block_input/ios`)
   - Flutter (from `Flutter`)
+  - flutter_custom_dialog (from `.symlinks/plugins/flutter_custom_dialog/ios`)
   - image_picker (from `.symlinks/plugins/image_picker/ios`)
   - libphonenumber (from `.symlinks/plugins/libphonenumber/ios`)
   - path_provider (from `.symlinks/plugins/path_provider/ios`)
@@ -20,8 +26,12 @@ SPEC REPOS:
     - libPhoneNumber-iOS
 
 EXTERNAL SOURCES:
+  block_input:
+    :path: ".symlinks/plugins/block_input/ios"
   Flutter:
     :path: Flutter
+  flutter_custom_dialog:
+    :path: ".symlinks/plugins/flutter_custom_dialog/ios"
   image_picker:
     :path: ".symlinks/plugins/image_picker/ios"
   libphonenumber:
@@ -30,7 +40,9 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/path_provider/ios"
 
 SPEC CHECKSUMS:
+  block_input: c71c429c311628db2049bb7f430d915e821a7aae
   Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
+  flutter_custom_dialog: c0d222a3c35af5b57581e54ef8784c94037cd2ec
   image_picker: 50e7c7ff960e5f58faa4d1f4af84a771c671bc4a
   libphonenumber: bd14d5abfc5939ab0b0767234e2d8e2593af258e
   libPhoneNumber-iOS: 0a32a9525cf8744fe02c5206eb30d571e38f7d75
