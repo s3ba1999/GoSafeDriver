@@ -6,7 +6,8 @@ import 'package:gosafe_driver/pages/registro_page.dart';
 import 'package:gosafe_driver/pages/datosC1_page.dart';
 import 'package:gosafe_driver/pages/tarjeta_id_page.dart';
 
-void main() {
+void main(){
+ 
   runApp(MyApp());
 }
 

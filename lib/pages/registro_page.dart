@@ -4,6 +4,7 @@ import 'package:gosafe_driver/pages/intro_page.dart';
 import 'package:gosafe_driver/pages/datosC1_page.dart';
 import 'package:gosafe_driver/pages/licencia_page.dart';
 import 'package:gosafe_driver/pages/tarjeta_id_page.dart';
+import 'package:gosafe_driver/providers/location.provider.dart';
 import 'package:gosafe_driver/widgets/widget_registro.dart';
 import 'package:geolocator/geolocator.dart';
 class RegistroPage extends StatefulWidget {
@@ -13,6 +14,7 @@ class RegistroPage extends StatefulWidget {
 }
 
 class _RegistroPageState extends State<RegistroPage> {
+  final _locationProv=LocationProvider();
   @override
   Widget build(BuildContext context) {
 
@@ -50,6 +52,7 @@ class _RegistroPageState extends State<RegistroPage> {
                     TarjetaR(route : ConfirmarIDPage.id,nombre : 'Confirmación de ID'),
                     TarjetaR(route : IntroPage.id,nombre : 'Información acerca del vehículo'),
                     TarjetaR(route : IntroPage.id,nombre : 'SOAT'),
+                    ElevatedButton(onPressed: ()async{_locationProv.create('GOLOASD');}, child: Text('Press me'))
                   ],
                 ),
               ),
