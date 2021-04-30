@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 import 'package:gosafe_driver/src/env.dart';
 
@@ -15,7 +16,8 @@ void main() async {
   ]);
 
   await GetStorage.init();
-
+  // await Firebase.initializeApp();
+  
   runApp(MyApp());
 }
 
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       getPages: pages,
-      initialRoute: Routes.tarjeta.toString(),
+      initialRoute: Routes.home.toString(),
       
       theme: ThemeData(
         brightness: Brightness.light,

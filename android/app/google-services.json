@@ -1,0 +1,91 @@
+{
+    "project_info": {
+        "project_number": "32288128367",
+        "firebase_url": "https://gosafe-d4fd9-default-rtdb.firebaseio.com",
+        "project_id": "gosafe-d4fd9",
+        "storage_bucket": "gosafe-d4fd9.appspot.com"
+    },
+    "client": [
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:32288128367:android:d5fa3f213e6a043cb5bc9a",
+                "android_client_info": {
+                    "package_name": "com.brainstore.gosafe"
+                }
+            },
+            "oauth_client": [
+                {
+                    "client_id": "32288128367-92sa4lq6foc4eiqoge3k4qaicg5duola.apps.googleusercontent.com",
+                    "client_type": 1,
+                    "android_info": {
+                        "package_name": "com.brainstore.gosafe",
+                        "certificate_hash": "927a4695012eb6ab1e18271f131b5f984fef6066"
+                    }
+                },
+                {
+                    "client_id": "32288128367-et1mj6mb4sset5cp243945k32k41fnlk.apps.googleusercontent.com",
+                    "client_type": 3
+                }
+            ],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyAWsj6AIvkTKXlOIsebEKoics6KHaV4-QU"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": [
+                        {
+                            "client_id": "32288128367-et1mj6mb4sset5cp243945k32k41fnlk.apps.googleusercontent.com",
+                            "client_type": 3
+                        },
+                        {
+                            "client_id": "32288128367-l9nhgamahec4j5nr9srd0iqsfssb5hro.apps.googleusercontent.com",
+                            "client_type": 2,
+                            "ios_info": {
+                                "bundle_id": "com.brainstore.gosafe"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "client_info": {
+                "mobilesdk_app_id": "1:32288128367:android:93f7e4c72159be5fb5bc9a",
+                "android_client_info": {
+                    "package_name": "com.example.gosafe_driver"
+                }
+            },
+            "oauth_client": [
+                {
+                    "client_id": "32288128367-et1mj6mb4sset5cp243945k32k41fnlk.apps.googleusercontent.com",
+                    "client_type": 3
+                }
+            ],
+            "api_key": [
+                {
+                    "current_key": "AIzaSyAWsj6AIvkTKXlOIsebEKoics6KHaV4-QU"
+                }
+            ],
+            "services": {
+                "appinvite_service": {
+                    "other_platform_oauth_client": [
+                        {
+                            "client_id": "32288128367-et1mj6mb4sset5cp243945k32k41fnlk.apps.googleusercontent.com",
+                            "client_type": 3
+                        },
+                        {
+                            "client_id": "32288128367-l9nhgamahec4j5nr9srd0iqsfssb5hro.apps.googleusercontent.com",
+                            "client_type": 2,
+                            "ios_info": {
+                                "bundle_id": "com.brainstore.gosafe"
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ],
+    "configuration_version": "1"
+}

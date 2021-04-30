@@ -35,7 +35,6 @@ enum Routes {
   confirmID,
 }
 
-
 final pages = [
   GetPage(name: Routes.home.toString(), page: () => HomePage()),
   GetPage(name: Routes.intro.toString(), page: () => IntroPage()),
@@ -46,6 +45,6 @@ final pages = [
   GetPage(name: Routes.confirm.toString(), page: () => ConfirmPhonePage()),
 
   GetPage(name: Routes.licencia.toString(), page: () => LicenciaPage()),
-  GetPage(name: Routes.tarjeta.toString(), page: () => TargetaIDPage()),
+  GetPage(name: Routes.tarjeta.toString(),  page: () => TargetaIDPage()),
   GetPage(name: Routes.confirmID.toString(), page: () => ConfirmarIDPage()),
 ];
