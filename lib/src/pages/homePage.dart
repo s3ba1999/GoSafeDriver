@@ -1,9 +1,11 @@
-import 'dart:ui';
-
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 
 import 'package:gosafe_driver/src/widgets/drawer.dart';
+
+import 'package:gosafe_driver/src/pages/home/ingresos.dart';
+import 'package:gosafe_driver/src/pages/home/solicitudes.dart';
+import 'package:gosafe_driver/src/pages/home/calificacion.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -14,6 +16,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int currentIndex = 0;
+  Widget currentView = SolicitudView();
 
   final String status = 'Libre';
   final scaffoldKey = GlobalKey<ScaffoldState>();
@@ -22,6 +25,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       key: scaffoldKey,
+      body: currentView,
       backgroundColor: Get.theme.accentColor,
       appBar: AppBar(
         elevation: 1,
@@ -91,7 +95,6 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: BottomNavigationBar(
         elevation: 1,
         currentIndex: currentIndex,
-        onTap: (index) => setState(() => currentIndex = index),
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.history),
@@ -109,6 +112,17 @@ class _HomePageState extends State<HomePage> {
             tooltip: 'Calificaciones',
           ),
         ],
+        onTap: (index) {
+          if (index == currentIndex) return;
+          if (index == 0) {
+            currentView = SolicitudView();
+          } else if (index == 1) {
+            currentView = IngresoView();
+          } else {
+            currentView = CalificacionView();
+          }
+          setState(() => currentIndex = index);
+        },
       ),
     );
   }

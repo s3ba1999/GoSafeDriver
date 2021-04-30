@@ -128,6 +128,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "flutter_polyline_points",
+      "rootUri": "file:///Users/cartory/development/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_polyline_points-0.2.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///Users/cartory/development/flutter/packages/flutter_test",
       "packageUri": "lib/",
@@ -234,6 +240,12 @@
       "rootUri": "file:///Users/cartory/development/flutter/.pub-cache/hosted/pub.dartlang.org/libphonenumber-1.0.2",
       "packageUri": "lib/",
       "languageVersion": "1.19"
+    },
+    {
+      "name": "mapbox_api",
+      "rootUri": "file:///Users/cartory/development/flutter/.pub-cache/hosted/pub.dartlang.org/mapbox_api-0.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
     },
     {
       "name": "matcher",
@@ -386,7 +398,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-04-30T01:34:06.050171Z",
+  "generated": "2021-04-30T03:33:28.362304Z",
   "generator": "pub",
   "generatorVersion": "2.12.2"
 }

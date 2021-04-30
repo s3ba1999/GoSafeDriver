@@ -146,6 +146,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.1"
+  flutter_polyline_points:
+    dependency: "direct main"
+    description:
+      name: flutter_polyline_points
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.6"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -268,6 +275,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.2"
+  mapbox_api:
+    dependency: "direct main"
+    description:
+      name: mapbox_api
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.3.0"
   matcher:
     dependency: transitive
     description:
