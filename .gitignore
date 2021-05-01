@@ -47,6 +47,7 @@ analysis_benchmark.json
 # Flutter/Dart/Pub related
 **/doc/api/
 .dart_tool/
+/.dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
 **/generated_plugin_registrant.dart
@@ -59,7 +60,10 @@ flutter_*.png
 linked_*.ds
 unlinked.ds
 unlinked_spec.ds
-
+*/.flutter-plugins-dependencies
+*/.flutter-plugins
+*/.packages
+*/package_config_subset
 # Android related
 **/android/**/gradle-wrapper.jar
 **/android/.gradle
