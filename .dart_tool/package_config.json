@@ -260,6 +260,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "modal_bottom_sheet",
+      "rootUri": "file:///Users/cartory/development/flutter/.pub-cache/hosted/pub.dartlang.org/modal_bottom_sheet-2.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "path",
       "rootUri": "file:///Users/cartory/development/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0",
       "packageUri": "lib/",
@@ -398,7 +404,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2021-04-30T03:33:28.362304Z",
+  "generated": "2021-04-30T05:39:57.076028Z",
   "generator": "pub",
   "generatorVersion": "2.12.2"
 }

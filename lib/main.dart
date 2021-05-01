@@ -3,9 +3,10 @@ import 'package:flutter/services.dart';
 
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-// import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 import 'package:gosafe_driver/src/env.dart';
+import 'package:gosafe_driver/src/providers/getLocation.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,8 +17,8 @@ void main() async {
   ]);
 
   await GetStorage.init();
-  // await Firebase.initializeApp();
-  
+  await Firebase.initializeApp();
+  Get.put(GetLocationController());
   runApp(MyApp());
 }
 
@@ -45,8 +46,8 @@ class MyApp extends StatelessWidget {
         
         textTheme: TextTheme(
           button: TextStyle(fontSize: 20, color: Colors.white, fontWeight: FontWeight.w700),
-
           overline: TextStyle(fontSize: 25, fontWeight: FontWeight.w600, color: Colors.grey),
+          caption: TextStyle(fontSize: 17, fontWeight: FontWeight.w700, color: Colors.black87),
 
           headline1: TextStyle(fontSize: 26, fontWeight: FontWeight.bold, color: Colors.white),
           headline2: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Color(0xff80AF08)),
@@ -55,6 +56,9 @@ class MyApp extends StatelessWidget {
           headline4: TextStyle(fontSize: 20, fontWeight: FontWeight.w500, color: Colors.grey),
           headline5: TextStyle(fontSize: 18, fontWeight: FontWeight.w600, color: Colors.white),
           headline6: TextStyle(fontSize: 16, fontWeight: FontWeight.w600, color: Colors.grey),
+
+          subtitle1: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.grey),
+          subtitle2: TextStyle(fontSize: 16, fontWeight: FontWeight.w700, color: Colors.green),
         ),
       ),
     );

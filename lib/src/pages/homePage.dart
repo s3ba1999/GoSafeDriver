@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 
 import 'package:gosafe_driver/src/widgets/drawer.dart';
 
-import 'package:gosafe_driver/src/pages/home/ingresos.dart';
-import 'package:gosafe_driver/src/pages/home/solicitudes.dart';
+import 'package:gosafe_driver/src/pages/home/ingreso.dart';
+import 'package:gosafe_driver/src/pages/home/solicitud.dart';
 import 'package:gosafe_driver/src/pages/home/calificacion.dart';
 
 class HomePage extends StatefulWidget {
@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       key: scaffoldKey,
       body: currentView,
-      backgroundColor: Get.theme.accentColor,
+      backgroundColor: Colors.grey[50],
       appBar: AppBar(
         elevation: 1,
         backgroundColor: Colors.white,
@@ -71,7 +71,7 @@ class _HomePageState extends State<HomePage> {
                   onPressed: () {
                     // TODO share localization to server
                     print('EMIT LOCATION');
-                    Get.close(0);
+                    Get.back();
                   },
                 ),
                 cancel: MaterialButton(
@@ -84,7 +84,7 @@ class _HomePageState extends State<HomePage> {
                     side: BorderSide(width: 1.5, color: Colors.redAccent),
                     borderRadius: BorderRadius.circular(15),
                   ),
-                  onPressed: () => Get.close(0),
+                  onPressed: () => Get.back(),
                 ),
               );
             },

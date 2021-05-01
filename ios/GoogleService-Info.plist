@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>CLIENT_ID</key>
+		<string>32288128367-kbt9rd3j5qrgomfasls9t4obq4ono89n.apps.googleusercontent.com</string>
+		<key>REVERSED_CLIENT_ID</key>
+		<string>com.googleusercontent.apps.32288128367-kbt9rd3j5qrgomfasls9t4obq4ono89n</string>
+		<key>ANDROID_CLIENT_ID</key>
+		<string>32288128367-92sa4lq6foc4eiqoge3k4qaicg5duola.apps.googleusercontent.com</string>
+		<key>API_KEY</key>
+		<string>AIzaSyBPrwBndS31LWoA5koWn5fLRLp5KNAYP6Y</string>
+		<key>GCM_SENDER_ID</key>
+		<string>32288128367</string>
+		<key>PLIST_VERSION</key>
+		<string>1</string>
+		<key>BUNDLE_ID</key>
+		<string>com.example.gosafeDriver</string>
+		<key>PROJECT_ID</key>
+		<string>gosafe-d4fd9</string>
+		<key>STORAGE_BUCKET</key>
+		<string>gosafe-d4fd9.appspot.com</string>
+		<key>IS_ADS_ENABLED</key>
+		<false></false>
+		<key>IS_ANALYTICS_ENABLED</key>
+		<false></false>
+		<key>IS_APPINVITE_ENABLED</key>
+		<true></true>
+		<key>IS_GCM_ENABLED</key>
+		<true></true>
+		<key>IS_SIGNIN_ENABLED</key>
+		<true></true>
+		<key>GOOGLE_APP_ID</key>
+		<string>1:32288128367:ios:f7336902d72570d4b5bc9a</string>
+		<key>DATABASE_URL</key>
+		<string>https://gosafe-d4fd9-default-rtdb.firebaseio.com</string>
+	</dict>
+</plist>
