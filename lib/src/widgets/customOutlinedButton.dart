@@ -3,8 +3,11 @@ import 'package:flutter/material.dart';
 class CustomOutlinedButton extends StatelessWidget {
   final Widget child;
   final Function onPressed;
-  const CustomOutlinedButton({Key key, this.child, this.onPressed})
-      : super(key: key);
+  const CustomOutlinedButton({
+    Key key,
+    this.child,
+    this.onPressed,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
