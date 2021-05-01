@@ -33,8 +33,9 @@ dependencies:
 
   #widgetDependencies
   block_input: ^1.2.3
+  modal_bottom_sheet: ^2.0.0
   international_phone_input: ^1.0.4
-
+  
   #firebaseDependencies
   firebase_auth:
   firebase_core: ^1.1.0
