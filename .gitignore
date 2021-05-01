@@ -59,7 +59,10 @@ flutter_*.png
 linked_*.ds
 unlinked.ds
 unlinked_spec.ds
-
+*/.flutter-plugins-dependencies
+*/.flutter-plugins
+*/.packages
+*/package_config_subset
 # Android related
 **/android/**/gradle-wrapper.jar
 **/android/.gradle
