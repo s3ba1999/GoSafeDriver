@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
+import 'package:gosafe_driver/src/providers/getTravel.dart';
 
 import 'package:gosafe_driver/src/widgets/drawer.dart';
 
@@ -8,6 +9,7 @@ import 'package:gosafe_driver/src/pages/home/solicitud.dart';
 import 'package:gosafe_driver/src/pages/home/calificacion.dart';
 
 class HomePage extends StatefulWidget {
+  final controller = Get.put(GetTravelController());
   HomePage({Key key}) : super(key: key);
 
   @override
@@ -20,6 +22,18 @@ class _HomePageState extends State<HomePage> {
 
   final String status = 'Libre';
   final scaffoldKey = GlobalKey<ScaffoldState>();
+
+  @override
+  void initState() {
+    this.widget.controller.clear();
+    super.initState();
+  }
+
+  @override
+  void dispose() {
+    this.widget.controller.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {

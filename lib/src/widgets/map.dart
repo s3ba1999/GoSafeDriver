@@ -1,3 +1,4 @@
+import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -5,12 +6,14 @@ import 'package:get/get_state_manager/src/simple/get_view.dart';
 
 import 'package:gosafe_driver/src/models/travel.dart';
 import 'package:gosafe_driver/src/providers/mapbox.dart';
+import 'package:gosafe_driver/src/providers/getTravel.dart';
 import 'package:gosafe_driver/src/providers/getLocation.dart';
 
 class MapView extends GetView<GetLocationController> {
   final Travel travel;
   final Set<Marker> markers = Set.from([]);
   final Set<Polyline> polylines = Set.from([]);
+  final travelController = Get.find<GetTravelController>();
 
   Future<BitmapDescriptor> buildIcon(String asset) async {
     return await BitmapDescriptor.fromAssetImage(
