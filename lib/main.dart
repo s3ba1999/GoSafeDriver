@@ -18,6 +18,7 @@ void main() async {
 
   await GetStorage.init();
   await Firebase.initializeApp();
+  
   Get.put(GetLocationController());
   runApp(MyApp());
 }

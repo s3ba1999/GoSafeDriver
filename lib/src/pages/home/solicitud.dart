@@ -2,9 +2,11 @@ import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 
 import 'package:firebase_database/firebase_database.dart';
-import 'package:gosafe_driver/src/widgets/map.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
+
+import 'package:gosafe_driver/src/widgets/map.dart';
+import 'package:gosafe_driver/src/models/travel.dart';
 
 class SolicitudView extends StatelessWidget {
   SolicitudView({Key key}) : super(key: key);
@@ -14,6 +16,8 @@ class SolicitudView extends StatelessWidget {
     return FirebaseAnimatedList(
       query: FirebaseDatabase.instance.reference().child('clients'),
       itemBuilder: (_, snap, anim, index) {
+        final travel = Travel.fromJson(snap.value);
+
         return ListTile(
           tileColor: Colors.grey[200],
           contentPadding: EdgeInsets.all(15),
@@ -21,9 +25,9 @@ class SolicitudView extends StatelessWidget {
           title: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text('Pablo Tardío', style: Get.textTheme.caption),
+              Text(travel.clientId.toString(), style: Get.textTheme.caption),
               Text(
-                'Centro Santa Cruz',
+                travel.sourceName,
                 style: TextStyle(color: Colors.black54),
                 strutStyle: StrutStyle.fromTextStyle(Get.textTheme.subtitle1),
               ),
@@ -36,11 +40,11 @@ class SolicitudView extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.symmetric(vertical: 3),
                 child: Text(
-                  'Plaza 24 de Septiembre',
+                  travel.destinyName,
                   style: Get.textTheme.subtitle1,
                 ),
               ),
-              Text('BOB15', style: Get.textTheme.subtitle2),
+              Text('BOB ${travel.amount}', style: Get.textTheme.subtitle2),
             ],
           ),
           onTap: () async {
@@ -60,7 +64,7 @@ class SolicitudView extends StatelessWidget {
                     SizedBox(
                       height: Get.height / 2.2,
                       width: double.maxFinite,
-                      child: MapView(),
+                      child: MapView(travel: travel),
                     ),
                     ListTile(
                       tileColor: Colors.grey[200],
@@ -68,9 +72,10 @@ class SolicitudView extends StatelessWidget {
                       title: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Pablo Tardío', style: Get.textTheme.caption),
+                          Text(travel.clientId.toString(),
+                              style: Get.textTheme.caption),
                           Text(
-                            'Centro Santa Cruz',
+                            travel.sourceName,
                             style: TextStyle(color: Colors.black54),
                             strutStyle: StrutStyle.fromTextStyle(
                               Get.textTheme.subtitle1,
@@ -85,11 +90,12 @@ class SolicitudView extends StatelessWidget {
                           Padding(
                             padding: EdgeInsets.symmetric(vertical: 3),
                             child: Text(
-                              'Plaza 24 de Septiembre',
+                              travel.destinyName,
                               style: Get.textTheme.subtitle1,
                             ),
                           ),
-                          Text('BOB15', style: Get.textTheme.subtitle2),
+                          Text('BOB ${travel.amount}',
+                              style: Get.textTheme.subtitle2),
                         ],
                       ),
                     ),
@@ -101,7 +107,7 @@ class SolicitudView extends StatelessWidget {
                         ),
                         color: Get.theme.primaryColor,
                         child: Text(
-                          'Aceptar 15Bs',
+                          'Aceptar ${travel.amount} Bs',
                           style: Get.textTheme.button,
                         ),
                         onPressed: () => print('ACEPTAR'),
@@ -127,7 +133,10 @@ class SolicitudView extends StatelessWidget {
                         ),
                         Container(
                           margin: EdgeInsets.symmetric(horizontal: 10),
-                          child: Text('15Bs', style: Get.textTheme.headline3),
+                          child: Text(
+                            '${travel.amount} Bs',
+                            style: Get.textTheme.headline3,
+                          ),
                         ),
                         IconButton(
                           iconSize: 30,

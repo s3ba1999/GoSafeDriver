@@ -13,7 +13,7 @@ class GetLocationController extends GetxController {
     subscription = Geolocator.getPositionStream(
       forceAndroidLocationManager: true,
       desiredAccuracy: LocationAccuracy.medium,
-      intervalDuration: Duration(milliseconds: 300),
+      intervalDuration: Duration(milliseconds: 1000),
     ).listen((lastPosition) {
       if (lastPosition == null) return;
       print(this.position = lastPosition);

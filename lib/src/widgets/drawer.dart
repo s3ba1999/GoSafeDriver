@@ -24,7 +24,7 @@ class CustomDrawer extends StatelessWidget {
               width: Get.width / 4,
               height: Get.width / 4,
               decoration: BoxDecoration(
-                color: Color(0xff80AF08),
+                color: Get.theme.primaryColor,
                 borderRadius: BorderRadius.circular(100),
               ),
             ),
@@ -65,13 +65,13 @@ class CustomDrawer extends StatelessWidget {
                 alignment: Alignment.center,
                 padding: EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: Color(0xff80AF08),
+                  color: Get.theme.primaryColor,
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(25),
                     bottomLeft: Radius.circular(25),
                   ),
                 ),
-                child: Text('Modo Pasajero', style: Get.textTheme.headline2),
+                child: Text('Modo Conductor', style: Get.textTheme.button),
               ),
             ),
           ],
